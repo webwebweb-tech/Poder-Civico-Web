@@ -1,0 +1,126 @@
+/*lo siguiente se aplica a toda la pagina y sus enlaces nativos*/
+ *{
+    font-family: 'Texturina', serif;
+    margin-left: 3px;
+    
+ }
+ body{
+    background: url(fondo\ de\ pagina.png) no-repeat center top;
+ }
+ /* icono instagram*/
+ .fab fa-instagram{
+     width: 10px;
+     height: 10px;
+ }
+/*estas siguientes lineas son del disño mobile, 
+ responden al comportamiento que deberia tener la pagina 
+ cuando el diseño cambie a vista de dispositivo mobil*/
+ @media only screen and (max-width: 400px) {
+    h1{
+        font-size: 15px;
+        position: relative;
+        flex-wrap: wrap;
+        color: #09bddd;
+        animation-name: titulo-animado;
+        animation-play-state: paused;
+     }
+}
+
+ /*estilos al header*/
+
+ header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    text-align: center;
+}
+/*arreglo del logo*/
+.imagen{
+    border: white 2px solid;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    
+
+}
+
+.imagen:hover{
+    border: black 2px solid;
+    width: 150px;
+    height: 150px;
+    transition: 5s;
+}
+
+.posibles{
+    width: 200px;
+    height: 200px;
+    
+}
+.pagetwoo{
+    align-items: center;
+}
+/*arreglo del titulo*/
+
+h1{
+    position: relative;
+    flex-wrap: wrap;
+    animation-name: titulo-animado;
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes titulo-animado{
+    0%{     color:#000000 ;
+           font-size: 20px;
+           font-weight: 300;          
+    }
+    100%{   color: #09bddd;
+           font-size: 25px;
+           font-weight:900;
+            
+    }
+}
+
+h2{
+    font-size: 20PX;
+    position: relative;
+    flex-wrap: wrap;
+    color: #0995ec;
+}
+
+/*arreglo del nav  */
+
+i{
+    border:  #ffffff 2px solid;
+    border-radius: 35px;
+    padding: 4px;
+}
+i:hover{
+    background-color:  #09bddd;
+    color: #ffffff;
+}
+
+a{
+    margin: 5px;
+    color: #00008b;
+    font-weight: 900;
+    font-size: 12px;    
+}
+
+a:hover{
+    color: #ffffff;
+}
+
+/*arreglo de las destacadas*/
+.destacadas{
+    display: flexbox;
+    justify-content: space-around;
+}
+/*arreglo footer*/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+}
